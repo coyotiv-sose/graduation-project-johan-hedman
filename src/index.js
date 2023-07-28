@@ -9,9 +9,9 @@ const axios = require('axios')
 
 async function main() {
   try {
-    const response = await axios.get('http://localhost:3000/index')
+    const response = await axios.get('http://localhost:3000/')
     const data = response.data
-    console.log('Response from the server:', data.title)
+    console.log('Response from the server:', data)
   } catch (error) {
     console.error('Error fetching data:', error.message)
   }
